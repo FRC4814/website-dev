@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+#top-bar{
+	position: relative;
+	height: 60px;
+	padding: 5px;
+	background-color: #ffffff;
+	img{
+		height: 50px;
+	}
+}
+
+nav{
+	background-color: #ffffff;
+	ul{
+		list-style: none;
+		li{
+			padding: 40px 20px 40px 0px;
+			float: left;
+			a{
+				color: #000;
+				font-weight: 800;
+				&:hover{
+					color: rgb(141, 141, 141);
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
