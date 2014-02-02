@@ -4,6 +4,9 @@ var app = (function() {
 	var privateVariable = 'app fired!',
 		docElem = document.documentElement;
 
+	// Load Slider
+	Flipsnap('.slideshow');
+
 	return {
 		publicFunction: function() {
 			console.log(privateVariable);
