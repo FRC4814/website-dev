@@ -4,9 +4,6 @@ var app = (function() {
 	var privateVariable = 'app fired!',
 		docElem = document.documentElement;
 
-	// Load Slider
-	Flipsnap('.slideshow');
-
 	return {
 		publicFunction: function() {
 			console.log(privateVariable);
@@ -29,3 +26,12 @@ var app = (function() {
 	app.userAgentInit();
 
 })();
+
+// Load Slider
+Flipsnap('.slideshow');
+var $next = $('.next').click(function() {
+	flipsnap.toNext();
+});
+var $prev = $('.past').click(function() {
+    flipsnap.toPrev();
+});
